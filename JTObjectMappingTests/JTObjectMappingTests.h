@@ -6,11 +6,12 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+//#import <SenTestingKit/SenTestingKit.h>
+#include <XCTest/XCTest.h>
 
 @class JTUserTest;
 
-@interface JTObjectMappingTests : SenTestCase
+@interface JTObjectMappingTests : XCTestCase
 
 @property (nonatomic, retain) NSDictionary *json;
 @property (nonatomic, retain) NSDictionary *mapping;

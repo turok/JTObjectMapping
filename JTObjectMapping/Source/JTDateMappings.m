@@ -11,8 +11,8 @@
 
 @interface JTDateMappings : NSObject <JTValidMappingKey>
 
-@property (nonatomic, copy) NSString *key;
-@property (nonatomic, copy) NSString *dateFormatString;
+@property (nonatomic, strong) NSString *key;
+@property (nonatomic, strong) NSString *dateFormatString;
 @property (nonatomic, strong) NSDateFormatter *dateFormatter;
 
 + (id <JTValidMappingKey>)mappingWithKey:(NSString *)key dateFormatString:(NSString *)dateFormatString;
@@ -51,14 +51,13 @@
     JTDateMappings *dateMappings = [[JTDateMappings alloc] init];
     dateMappings.dateFormatString = dateFormatString;
     dateMappings.key              = key;
-    return [dateMappings autorelease];
+    return dateMappings;
 }
 
 - (void)dealloc {
     self.dateFormatter = nil;
     self.dateFormatString = nil;
     self.key = nil;
-    [super dealloc];
 }
 
 - (BOOL)transformValue:(NSObject *)oldValue
@@ -69,7 +68,7 @@
         
         if (!self.dateFormatter) {
             
-            self.dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
+            self.dateFormatter = [[NSDateFormatter alloc] init];
             [self.dateFormatter setDateFormat:self.dateFormatString];
             
         }
@@ -103,13 +102,12 @@
     JTDateFormatterMappings *dateMappings = [[JTDateFormatterMappings alloc] init];
     dateMappings.dateFormatter = dateFormatter;
     dateMappings.key           = key;
-    return [dateMappings autorelease];
+    return dateMappings;
 }
 
 - (void)dealloc {
     self.dateFormatter = nil;
     self.key = nil;
-    [super dealloc];
 }
 
 - (BOOL)transformValue:(NSObject *)oldValue
@@ -147,12 +145,11 @@
     JTDateEpochMappings *epochMapping = [[JTDateEpochMappings alloc] init];
     epochMapping.key = key;
     epochMapping.divisorForSeconds = divisorForSeconds;
-    return [epochMapping autorelease];
+    return epochMapping;
 }
 
 - (void)dealloc {
     self.key = nil;
-    [super dealloc];
 }
 
 - (BOOL)transformValue:(NSObject *)oldValue

@@ -10,7 +10,7 @@
 
 @interface JTSetMappings : NSObject <JTValidMappingKey>
 
-@property (nonatomic, copy) NSString *key;
+@property (nonatomic, strong) NSString *key;
 
 + (id <JTValidMappingKey>)mappingWithKey:(NSString *)key;
 
@@ -23,12 +23,11 @@
 + (id <JTValidMappingKey>)mappingWithKey:(NSString *)key {
     JTSetMappings *map = [[JTSetMappings alloc] init];
     map.key = key;
-    return [map autorelease];
+    return map;
 }
 
 - (void)dealloc {
     self.key = nil;
-    [super dealloc];
 }
 
 - (BOOL)transformValue:(NSObject *)oldValue

@@ -11,32 +11,31 @@
 
 @interface JTMappings : NSObject <JTValidMappingKey>
 
-@property (nonatomic, retain) NSString *key;
-@property (nonatomic, retain) NSMutableDictionary *mapping;
-@property (nonatomic, assign) Class targetClass;
+@property (nonatomic, strong) NSString *key;
+@property (nonatomic, strong) NSMutableDictionary *mapping;
+@property (nonatomic, weak) Class targetClass;
 
 + (id <JTValidMappingKey>)mappingWithKey:(NSString *)aKey
                              targetClass:(Class)aClass
-                                 mapping:(NSMutableDictionary *)aMapping;
+                                 mapping:(NSDictionary *)aMapping;
 
 @end
 
 @implementation JTMappings
-@synthesize key = _key, mapping, targetClass;
+@synthesize key = _key, mapping;
 
-+ (id <JTValidMappingKey>)mappingWithKey:(NSString *)aKey targetClass:(Class)aClass mapping:(NSMutableDictionary *)aMapping {
++ (id <JTValidMappingKey>)mappingWithKey:(NSString *)aKey targetClass:(Class)aClass mapping:(NSDictionary *)aMapping {
     JTMappings *obj = [[JTMappings alloc] init];
     obj.key         = aKey;
-    obj.mapping     = [[aMapping mutableCopy] autorelease];
+    obj.mapping     = [aMapping mutableCopy];
     obj.targetClass = aClass;
-    return [obj autorelease];
+    return obj;
 }
 
 - (void)dealloc {
     self.key = nil;
     self.mapping = nil;
     self.targetClass = nil;
-    [super dealloc];
 }
 
 - (BOOL)transformValue:(NSObject *)oldValue
@@ -79,7 +78,7 @@
 
 @implementation NSObject (JTValidMappingKey)
 
-+ (id <JTValidMappingKey>)mappingWithKey:(NSString *)key mapping:(NSMutableDictionary *)mapping {
++ (id <JTValidMappingKey>)mappingWithKey:(NSString *)key mapping:(NSDictionary *)mapping {
     return [JTMappings mappingWithKey:key targetClass:[self class] mapping:mapping];
 }
 

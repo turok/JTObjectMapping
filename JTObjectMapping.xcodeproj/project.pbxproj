@@ -22,7 +22,6 @@
 		1A7E71D91415F96800AE157A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E71D71415F96800AE157A /* MainWindow.xib */; };
 		1A7E71DC1415F96800AE157A /* JTObjectMappingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E71DB1415F96800AE157A /* JTObjectMappingViewController.m */; };
 		1A7E71DF1415F96800AE157A /* JTObjectMappingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E71DD1415F96800AE157A /* JTObjectMappingViewController.xib */; };
-		1A7E71E71415F96800AE157A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7E71E61415F96800AE157A /* SenTestingKit.framework */; };
 		1A7E71E81415F96800AE157A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7E71C51415F96700AE157A /* UIKit.framework */; };
 		1A7E71E91415F96800AE157A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7E71C71415F96700AE157A /* Foundation.framework */; };
 		1A7E71EA1415F96800AE157A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7E71C91415F96700AE157A /* CoreGraphics.framework */; };
@@ -35,6 +34,9 @@
 		1A7E720E141613C900AE157A /* JTUserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E720D141613C800AE157A /* JTUserTest.m */; };
 		1AF05842141D1C9A00CD7E50 /* JTObjectMappingArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF05841141D1C9A00CD7E50 /* JTObjectMappingArrayTest.m */; };
 		681D24CF1835327A00200A11 /* JTURLMappings.m in Sources */ = {isa = PBXBuildFile; fileRef = 681D24CE1835327A00200A11 /* JTURLMappings.m */; };
+		72B7ACB11E4DA61F004F2D67 /* JTUserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E720D141613C800AE157A /* JTUserTest.m */; };
+		72B7ACB21E4DA61F004F2D67 /* JTSocialNetworkTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E7207141602C900AE157A /* JTSocialNetworkTest.m */; };
+		72B7ACB31E4DA61F004F2D67 /* JPNestedArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A23E1D61469B35C002BBB85 /* JPNestedArrayTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +75,6 @@
 		1A7E71DA1415F96800AE157A /* JTObjectMappingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTObjectMappingViewController.h; sourceTree = "<group>"; };
 		1A7E71DB1415F96800AE157A /* JTObjectMappingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTObjectMappingViewController.m; sourceTree = "<group>"; };
 		1A7E71DE1415F96800AE157A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JTObjectMappingViewController.xib; sourceTree = "<group>"; };
-		1A7E71E51415F96800AE157A /* JTObjectMappingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTObjectMappingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A7E71E61415F96800AE157A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1A7E71EF1415F96800AE157A /* JTObjectMappingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JTObjectMappingTests-Info.plist"; sourceTree = "<group>"; };
 		1A7E71F11415F96800AE157A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A7E71F31415F96800AE157A /* JTObjectMappingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTObjectMappingTests.h; sourceTree = "<group>"; };
@@ -91,6 +91,7 @@
 		1AF05841141D1C9A00CD7E50 /* JTObjectMappingArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTObjectMappingArrayTest.m; sourceTree = "<group>"; };
 		681D24CD1835327A00200A11 /* JTURLMappings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTURLMappings.h; sourceTree = "<group>"; };
 		681D24CE1835327A00200A11 /* JTURLMappings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTURLMappings.m; sourceTree = "<group>"; };
+		72B7ACA61E4D9E40004F2D67 /* JTObjectMappingTests1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = JTObjectMappingTests1.xctest; path = JTObjectMappingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +109,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A7E71E71415F96800AE157A /* SenTestingKit.framework in Frameworks */,
 				1A7E71E81415F96800AE157A /* UIKit.framework in Frameworks */,
 				1A7E71E91415F96800AE157A /* Foundation.framework in Frameworks */,
 				1A7E71EA1415F96800AE157A /* CoreGraphics.framework in Frameworks */,
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				1A7E71C11415F96700AE157A /* JTObjectMapping.app */,
-				1A7E71E51415F96800AE157A /* JTObjectMappingTests.octest */,
+				72B7ACA61E4D9E40004F2D67 /* JTObjectMappingTests1.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,7 +143,6 @@
 				1A7E71C51415F96700AE157A /* UIKit.framework */,
 				1A7E71C71415F96700AE157A /* Foundation.framework */,
 				1A7E71C91415F96700AE157A /* CoreGraphics.framework */,
-				1A7E71E61415F96800AE157A /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -245,12 +244,11 @@
 		};
 		1A7E71E41415F96800AE157A /* JTObjectMappingTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A7E71FC1415F96800AE157A /* Build configuration list for PBXNativeTarget "JTObjectMappingTests" */;
+			buildConfigurationList = 72B7ACAD1E4D9E40004F2D67 /* Build configuration list for PBXNativeTarget "JTObjectMappingTests" */;
 			buildPhases = (
 				1A7E71E01415F96800AE157A /* Sources */,
 				1A7E71E11415F96800AE157A /* Frameworks */,
 				1A7E71E21415F96800AE157A /* Resources */,
-				1A7E71E31415F96800AE157A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -259,8 +257,8 @@
 			);
 			name = JTObjectMappingTests;
 			productName = JTObjectMappingTests;
-			productReference = 1A7E71E51415F96800AE157A /* JTObjectMappingTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 72B7ACA61E4D9E40004F2D67 /* JTObjectMappingTests1.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -268,6 +266,9 @@
 		1A7E71B81415F96700AE157A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 1A7E71BB1415F96700AE157A /* Build configuration list for PBXProject "JTObjectMapping" */;
@@ -311,22 +312,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		1A7E71E31415F96800AE157A /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		1A7E71BD1415F96700AE157A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -352,6 +337,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B7ACB11E4DA61F004F2D67 /* JTUserTest.m in Sources */,
+				72B7ACB21E4DA61F004F2D67 /* JTSocialNetworkTest.m in Sources */,
+				72B7ACB31E4DA61F004F2D67 /* JPNestedArrayTest.m in Sources */,
 				1A7E71F61415F96800AE157A /* JTObjectMappingTests.m in Sources */,
 				1AF05842141D1C9A00CD7E50 /* JTObjectMappingArrayTest.m in Sources */,
 			);
@@ -408,6 +396,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -418,11 +407,11 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -432,14 +421,15 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -449,6 +439,7 @@
 		1A7E71FA1415F96800AE157A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JTObjectMapping/JTObjectMapping-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -458,7 +449,7 @@
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "JTObjectMapping/JTObjectMapping-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -467,49 +458,96 @@
 		1A7E71FB1415F96800AE157A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JTObjectMapping/JTObjectMapping-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "JTObjectMapping/JTObjectMapping-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		1A7E71FD1415F96800AE157A /* Debug */ = {
+		72B7ACAE1E4D9E40004F2D67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JTObjectMapping.app/JTObjectMapping";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JTObjectMapping/JTObjectMapping-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "JTObjectMappingTests/JTObjectMappingTests-Info.plist";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = JTObjectMappingTests/JTObjectMappingTests-Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.JTObjectMappingTests1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JTObjectMapping.app/JTObjectMapping";
 			};
 			name = Debug;
 		};
-		1A7E71FE1415F96800AE157A /* Release */ = {
+		72B7ACAF1E4D9E40004F2D67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JTObjectMapping.app/JTObjectMapping";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JTObjectMapping/JTObjectMapping-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "JTObjectMappingTests/JTObjectMappingTests-Info.plist";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = JTObjectMappingTests/JTObjectMappingTests-Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.JTObjectMappingTests1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JTObjectMapping.app/JTObjectMapping";
 			};
 			name = Release;
 		};
@@ -534,11 +572,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A7E71FC1415F96800AE157A /* Build configuration list for PBXNativeTarget "JTObjectMappingTests" */ = {
+		72B7ACAD1E4D9E40004F2D67 /* Build configuration list for PBXNativeTarget "JTObjectMappingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1A7E71FD1415F96800AE157A /* Debug */,
-				1A7E71FE1415F96800AE157A /* Release */,
+				72B7ACAE1E4D9E40004F2D67 /* Debug */,
+				72B7ACAF1E4D9E40004F2D67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

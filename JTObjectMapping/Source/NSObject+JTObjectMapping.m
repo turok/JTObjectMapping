@@ -47,7 +47,7 @@ static inline NSString *JTGetterToSetter(NSString *keyPath) {
     __block NSMutableDictionary *notMapped = [mapping mutableCopy];
 
     [dict enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        id newKey = [mapping objectForKey:key];
+        id newKey = mapping[key];
         if (newKey == nil) {
             // We want to auto reference the NSDictionary key corresponding NSObject property key
             // with the same name defined as in the NSObject subclass.
@@ -142,8 +142,6 @@ static inline NSString *JTGetterToSetter(NSString *keyPath) {
         }
     }];
 #endif
-
-    [notMapped release];
 }
 
 
@@ -157,7 +155,7 @@ static inline NSString *JTGetterToSetter(NSString *keyPath) {
 
     if ([object isKindOfClass:[NSDictionary class]]) {
         // the json object is a dict -- create a new dict with the objects we can map from its contents
-        returnObject = [[[[self class] alloc] init] autorelease];
+        returnObject = [[[self class] alloc] init];
         [returnObject setValueFromDictionary:(NSDictionary *)object mapping:mapping];
     } else if ([object isKindOfClass:[NSArray class]]) {
         // the json object is an array -- create a new array with the objects we can map from its contents

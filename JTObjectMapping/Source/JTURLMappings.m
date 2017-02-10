@@ -10,7 +10,7 @@
 
 @interface JTURLMappings : NSObject <JTValidMappingKey>
 
-@property (nonatomic, copy) NSString *key;
+@property (nonatomic, strong) NSString *key;
 
 @end
 
@@ -20,12 +20,11 @@
 {
     JTURLMappings *map = [[JTURLMappings alloc] init];
     map.key = key;
-    return [map autorelease];
+    return map;
 }
 
 - (void)dealloc {
     self.key = nil;
-    [super dealloc];
 }
 
 - (BOOL)transformValue:(NSObject *)oldValue

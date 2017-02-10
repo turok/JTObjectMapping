@@ -40,15 +40,15 @@
 }
 
 - (void)testUserArray {
-    STAssertTrue([self.userArray count] == 2, @"Should have two users", nil);
+    XCTAssertTrue([self.userArray count] == 2, @"Should have two users");
     
     JTUserTest *userJohn = [self.userArray objectAtIndex:0];
-    STAssertTrue([userJohn isKindOfClass:[JTUserTest class]], @"%@ != [JTUserTest class]", [userJohn class]);
-    STAssertEqualObjects(userJohn.name, @"John", nil, nil);
+    XCTAssertTrue([userJohn isKindOfClass:[JTUserTest class]], @"%@ != [JTUserTest class]", [userJohn class]);
+    XCTAssertEqualObjects(userJohn.name, @"John");
     
     JTUserTest *userDoe = [self.userArray objectAtIndex:1];
-    STAssertTrue([userDoe isKindOfClass:[JTUserTest class]], @"%@ != [JTUserTest class]", [userDoe class]);
-    STAssertEqualObjects(userDoe.name, @"Doe", nil, nil);
+    XCTAssertTrue([userDoe isKindOfClass:[JTUserTest class]], @"%@ != [JTUserTest class]", [userDoe class]);
+    XCTAssertEqualObjects(userDoe.name, @"Doe");
 }
 
 
