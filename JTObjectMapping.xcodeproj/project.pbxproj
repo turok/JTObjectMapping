@@ -91,7 +91,7 @@
 		1AF05841141D1C9A00CD7E50 /* JTObjectMappingArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTObjectMappingArrayTest.m; sourceTree = "<group>"; };
 		681D24CD1835327A00200A11 /* JTURLMappings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTURLMappings.h; sourceTree = "<group>"; };
 		681D24CE1835327A00200A11 /* JTURLMappings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTURLMappings.m; sourceTree = "<group>"; };
-		72B7ACA61E4D9E40004F2D67 /* JTObjectMappingTests1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = JTObjectMappingTests1.xctest; path = JTObjectMappingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B7ACA61E4D9E40004F2D67 /* JTObjectMappingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JTObjectMappingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				1A7E71C11415F96700AE157A /* JTObjectMapping.app */,
-				72B7ACA61E4D9E40004F2D67 /* JTObjectMappingTests1.xctest */,
+				72B7ACA61E4D9E40004F2D67 /* JTObjectMappingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,7 +257,7 @@
 			);
 			name = JTObjectMappingTests;
 			productName = JTObjectMappingTests;
-			productReference = 72B7ACA61E4D9E40004F2D67 /* JTObjectMappingTests1.xctest */;
+			productReference = 72B7ACA61E4D9E40004F2D67 /* JTObjectMappingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -439,6 +439,7 @@
 		1A7E71FA1415F96800AE157A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JTObjectMapping/JTObjectMapping-Prefix.pch";
@@ -458,6 +459,7 @@
 		1A7E71FB1415F96800AE157A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JTObjectMapping/JTObjectMapping-Prefix.pch";
@@ -499,12 +501,12 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = JTObjectMappingTests/JTObjectMappingTests-Info.plist;
+				INFOPLIST_FILE = "JTObjectMappingTests/JTObjectMappingTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.JTObjectMappingTests1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.JTObjectMappingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JTObjectMapping.app/JTObjectMapping";
 			};
@@ -541,11 +543,11 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = JTObjectMappingTests/JTObjectMappingTests-Info.plist;
+				INFOPLIST_FILE = "JTObjectMappingTests/JTObjectMappingTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.JTObjectMappingTests1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.JTObjectMappingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JTObjectMapping.app/JTObjectMapping";
 			};
