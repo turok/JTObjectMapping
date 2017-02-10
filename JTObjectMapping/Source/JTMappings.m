@@ -11,9 +11,9 @@
 
 @interface JTMappings : NSObject <JTValidMappingKey>
 
-@property (nonatomic, weak) NSString *key;
-@property (nonatomic, weak) NSDictionary *mapping;
-@property (nonatomic, weak) Class targetClass;
+@property (nonatomic, strong) NSString *key;
+@property (nonatomic, strong) NSDictionary *mapping;
+@property (nonatomic, strong) Class targetClass;
 
 + (id <JTValidMappingKey>)mappingWithKey:(NSString *)aKey
                              targetClass:(Class)aClass
